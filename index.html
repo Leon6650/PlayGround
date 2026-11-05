@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<meta name="theme-color" content="#071018" />
+<link rel="icon" href="data:," />
+<title>Orbital Drop — Gravity Run</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main id="game">
+  <div class="shade"></div>
+  <header class="topbar">
+    <div class="brand"><div class="brand-icon">◉</div><div><div class="brand-text">ORBITAL DROP</div><div class="brand-sub">GRAVITY RUN · SECTOR 07</div></div></div>
+    <div class="hud">
+      <div class="pill"><div class="pill-label">TIME</div><div class="pill-value" id="timer">00:00</div></div>
+      <div class="pill shards"><div class="pill-label">ENERGY CORES</div><div class="shard-dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div></div>
+      <div class="pill"><div class="pill-label">RECOVERY</div><div class="pill-value" id="lives">◆ ◆ ◆</div></div>
+    </div>
+  </header>
+  <section class="mission"><div class="eyebrow"><span class="live"></span> LIVE SIMULATION</div><h1>Find your <em>gravity.</em></h1><p id="status">Collect all 3 energy cores, then reach the extraction gate.</p></section>
+  <div class="bottom-ui">
+    <div class="controls-card"><div class="control-keys"><span>W</span><div><span>A</span><span>S</span><span>D</span></div></div><div><b>STEER THE ORB</b><small>WASD / ARROWS · SPACE TO BOOST</small></div></div>
+    <div class="hint"><span class="hint-icon">✦</span><span>Momentum is your friend.<br><b>Mind the void.</b></span></div>
+  </div>
+  <div class="touch-controls" aria-label="Touch controls"><button data-dir="up" aria-label="Forward">▲</button><div><button data-dir="left" aria-label="Left">◀</button><button data-dir="down" aria-label="Back">▼</button><button data-dir="right" aria-label="Right">▶</button></div><button class="boost" data-dir="boost" aria-label="Boost">✦</button></div>
+  <div class="toast" id="toast"></div>
+  <div class="modal" id="modal"><div class="modal-card"><div class="modal-kicker">SECTOR 07 · EXTRACTION</div><div class="modal-title" id="modalTitle">Orbital Drop</div><p id="modalCopy">A little gravity. A lot of momentum.<br>Recover all three cores and find the gate.</p><button id="playButton">DROP IN <span>↗</span></button><div class="modal-note">WASD / ARROWS TO STEER &nbsp;·&nbsp; SPACE TO BOOST</div></div></div>
+  <div class="corner-note">PHYSICS FIELD <span>●</span> ONLINE</div>
+</main>
+<script type="module" src="game.js"></script>
+</body>
+</html>
